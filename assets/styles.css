@@ -1,3 +1,39 @@
 body { 
     background-color: gray;
 }
+
+.mainBox {
+    display: flexbox;
+    min-height: 95vh;
+    max-height: 100vh;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+a {
+    margin: 3px;
+    padding: 3px;
+    color: white;
+    text-decoration: none;
+}
+
+.headBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    max-height: 20;
+    background-color: navy;
+}
+
+.sectionBox {
+    min-height: 75vh;
+    background-color: blue;
+}
+
+.footBox {
+    min-height: 13vh;
+    max-height: 19vh;
+    background-color: orange;
+}

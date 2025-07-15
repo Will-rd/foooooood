@@ -1,4 +1,8 @@
-body { 
+
+
+
+
+body {
     background-color: gray;
 }
 
@@ -15,26 +19,26 @@ body {
     font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 
 img {
     opacity: 60%;
     display: block;
     width: 100vw;
-    height: 80vh;
+    height: auto;
 }
 
 .overlayText {
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 10px 20px;
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 a {
@@ -45,12 +49,14 @@ a {
 }
 
 .headBox {
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     min-height: 15vh;
     max-height: 20;
+    color: white;
     background-color: navy;
 }
 
@@ -67,3 +73,16 @@ a {
     background-color: orange;
 }
 
+@media screen and (max-width: 768px) {
+    .overlayText {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}

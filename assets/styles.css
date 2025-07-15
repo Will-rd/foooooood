@@ -73,6 +73,12 @@ a {
     background-color: orange;
 }
 
+#descText {
+    font-size: 1.5rem;
+}
+
+
+
 @media screen and (max-width: 768px) {
     .overlayText {
         position: absolute;
@@ -84,5 +90,9 @@ a {
         padding: 10px 20px;
         text-align: center;
         font-size: 1rem;
+    }
+
+    #descText {
+        font-size: 0.5rem;
     }
 }

@@ -154,6 +154,99 @@ nav a.active::after {
     animation: bounce 2s infinite;
 }
 
+/* Sections */
+
+section {
+    padding: 8rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: var(--darkRed);
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: var(--greenPastel);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Food Section */
+
+.food {
+    background-color: #ff7400;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.food-item {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.food-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.food-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bluePastel);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    opacity: 0;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.food-item:hover .food-overlay {
+    opacity: 1;
+}
+
+.food-item:hover img {
+    transform: scale(1.1);
+}
+
+.food-overlay h3 {
+    color: var(--orangeDark);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.food-overlay p {
+    color: var(--darkRed);
+    text-align: center;
+    line-height: 1.6;
+}
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
     40% {transform: translateY(-20px);}
@@ -210,6 +303,7 @@ nav a.active::after {
 
     .hero h1 {
         font-size: 2.2rem;
+        margin-top: 50px;
     }
 
     .section-header h2 {

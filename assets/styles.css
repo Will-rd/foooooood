@@ -253,7 +253,60 @@ section {
     60% {transform: translateY(-10px);}
 }
 
+/* Vibe Section */
 
+.vibe {
+    background-color: var(--bluePastel);
+}
+
+.vibe p {
+    color: #ff7400;
+}
+
+.vibe-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.vibe-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--darkRed);
+}
+
+.vibe-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--orangeDark);
+    margin-bottom: 1.5rem;
+}
+
+.vibe-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 400px;
+    background: linear-gradient(45deg, var(--midOrange), var(--darkRed));
+    background: url(../bucket/foodTruck.webp);
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: url(../bucket/foodTruck.webp);
+    border-radius: 10px;
+}
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -313,7 +366,6 @@ section {
     .hero h1 {
         font-size: 2.2rem;
         margin-top: 50px;
-        display: ;
     }
 
     .section-header h2 {

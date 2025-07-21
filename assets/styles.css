@@ -296,14 +296,24 @@ section {
 }
 
 @media (max-width: 576px) {
+
+    .headBox {
+        max-height: 100px;
+    }
+
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
     }
 
+    nav a {
+        font-size: 0.7rem;
+    }
+
     .hero h1 {
         font-size: 2.2rem;
         margin-top: 50px;
+        display: ;
     }
 
     .section-header h2 {

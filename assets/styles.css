@@ -290,14 +290,14 @@ section {
     position: relative;
     height: 400px;
     background: linear-gradient(45deg, var(--midOrange), var(--darkRed));
-    background: url(../bucket/foodTruck.webp);
+    /* background: url(../bucket/foodTruck.webp); */
     object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.about-image::before {
+.vibe-image::before {
     content: '';
     position: absolute;
     top: 20px;
@@ -308,20 +308,84 @@ section {
     border-radius: 10px;
 }
 
+/* Tribe Section */
+
+.tribe {
+    background-color: var(--darkRed);
+}
+
+.tribe h2 {
+    color: var(--midOrange);
+}
+
+.tribe p {
+    color: var(--bluePastel);
+}
+
+.tribe-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.tribe-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--lightOrange);
+}
+
+.tribe-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--greenPastel);
+    margin-bottom: 1.5rem;
+}
+
+.tribe-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 550px;
+    width: 500px;
+    background: linear-gradient(45deg, var(--midOrange), var(--darkRed));
+    /* background: url(../bucket/chefWill.png); */
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tribe-image::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: url(../bucket/chefWill.png);
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .hero h1 {
         font-size: 3rem;
     }
 
-    .about-content,
+    .vibe-content,
+    .tribe-content,
     .contact-container {
         grid-template-columns: 1fr;
     }
 
-    .about-image {
+    .vibe-image,
+    .tribe-image {
         order: -1;
-        height: 350px;
+        height: 450px;
+        width: 350px;
     }
 }
 
@@ -370,5 +434,11 @@ section {
 
     .section-header h2 {
         font-size: 2.2rem;
+    }
+
+    p,
+    h2,
+    h3 {
+        margin: 10px;
     }
 }
